@@ -1,0 +1,105 @@
+html {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background: linear-gradient(145deg, white, pink, rgb(160, 91, 201), rgb(73, 11, 109));
+}
+
+.app {
+    width: 30rem;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.app img {
+    height: 1.55rem;
+    width: 1.5rem;
+}
+
+.row {
+    display: flex;
+    position: relative;
+}
+
+input {
+    border: 0.01rem solid rgb(83, 100, 113);
+    border-radius: 1rem;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    color: white;
+    background: transparent;
+}
+
+button {
+    border: none;
+    outline: none;
+    width: 3rem;
+    color: white;
+    font-size: 1rem;
+    background: rgb(0, 149, 218);
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 0.3rem 0.75rem;
+
+    position: absolute;
+    right: 0rem;
+
+}
+
+ul {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+ul li {
+    margin: 1rem 0rem;
+    background-color: whitesmoke;
+    padding: 0rem 1rem;
+    list-style: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li.checked span.todo-list {
+    text-decoration: line-through;
+}
+
+ul li span {
+    font-size: 1.5rem;
+}
+
+ul li span.close-btn {
+    color: rgb(83, 100, 113);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul li span.close-btn:hover {
+    scale: 1.5;
+}
